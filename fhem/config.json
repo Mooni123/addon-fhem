@@ -1,10 +1,10 @@
 {
   "name": "FHEM",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "slug": "fhem",
   "description": "FHEM Plugin",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
-  "url": "https://github.com/KastB/addon-fhem",
+  "url": "https://github.com/Mooni123/addon-fhem",
   "startup": "services",
   "boot": "auto",
   "webui": "http://[HOST]:[PORT:8083]",
