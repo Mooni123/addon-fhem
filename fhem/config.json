@@ -23,8 +23,7 @@
   "host_network": false,
   "environment": {
   },
-  "devices": [
-  ],
+  "devices": ["/dev/serial/by-id/usb-1a86_USB2.0-Serial-if00-port0"],
   "privileged": [
     "SYS_ADMIN",
     "SYS_RAWIO"
@@ -34,13 +33,17 @@
     "apt_pks": "",
     "pip_pks": "",
     "npm_pks": "",
-    "cpan_pks": "Net::MQTT  Net::MQTT::Message Net::MQTT::Message::JustMessageId"
+    "cpan_pks": "Net::MQTT  Net::MQTT::Message Net::MQTT::Message::JustMessageId",
+    "device": "/dev/serial/by-id/usb-1a86_USB2.0-Serial_-if00-port0",
+    "baud": "57600"
   },
   "schema": {
     "apt_pks": "str",
     "pip_pks": "str",
     "npm_pks": "str",
-    "cpan_pks": "str"
+    "cpan_pks": "str",
+    "device": "device(subsystem=tty)",
+    "baud": ["9600","19200","38400","57600","115200"]
   }
 
 }
